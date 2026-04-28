@@ -7,7 +7,7 @@
     {
         Console.Write("Ingrese la cantidad de zonas: ");
         VFila=int.TryParse(Console.ReadLine(), out filas);  
-        if (VFila = true && filas > 0)
+        if (VFila == true && filas > 0)
         {
             return filas;
         }
@@ -30,7 +30,7 @@ int VColumna()
     {
         Console.Write("Ingrese la cantidad de dias: ");
         VColumnas = int.TryParse(Console.ReadLine(), out columnas);
-        if (VColumnas= true && columnas > 0)
+        if (VColumnas== true && columnas > 0)
         {
             return columnas;
         }
@@ -50,7 +50,7 @@ for (int i = 0; i < resultadoFila; i++)
 {
     for (int j = 0; j < resultadoColumnas; j++)
     {
-        Console.Write($"Ingrese Valor para: ");
+        Console.Write($"Ingrese Valor para [{i},{j}]: ");
         matriz[i, j] = int.Parse(Console.ReadLine());
     }
 }
@@ -59,7 +59,7 @@ for (int i = 0;i < resultadoFila; i++)
 {
     for (int j = 0;j < resultadoColumnas; j++)
     {
-        Console.WriteLine(matriz[i,j]+" ");
+        Console.Write(matriz[i,j]+" ");
     }
     Console.WriteLine();
 }
